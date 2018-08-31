@@ -14,7 +14,7 @@ tracklive.app
 # Architecture
 Diagram: https://bit.ly/2wwPWVF
 
-# Tools
+# Technologies & Tools
 ### Mobile
 - Swift for iOS
 - Kotlin for Android
