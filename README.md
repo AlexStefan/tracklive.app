@@ -20,8 +20,8 @@ Diagram: https://bit.ly/2wwPWVF
 - Kotlin for Android
 - Flutter for cross platform
 ### API
-- Amazon
 - Google Cloud
+- API Design:https://github.com/sergheir/tracklive.app
 ### Repository
 - Github
 ### Issue tracker
