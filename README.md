@@ -15,14 +15,14 @@ tracklive.app
 Diagram: https://bit.ly/2wwPWVF
 
 # Tools
-## Mobile
+### Mobile
 - Swift for iOS
 - Kotlin for Android
 - Flutter for cross platform
-## API
+### API
 Amazon
 
 Google Cloud
-## Repository
+### Repository
 Github
-## Issue tracker
+### Issue tracker
