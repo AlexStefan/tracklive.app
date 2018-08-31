@@ -9,20 +9,19 @@ The service consist of two types of users:
 	Trackers - the ones tracking others on map
 
 # Domain
-tracklive.app
-	
+https://tracklive.app
+
 # Architecture
 Diagram: https://bit.ly/2wwPWVF
 
-# Tools
+# Technologies & Tools
 ### Mobile
 - Swift for iOS
 - Kotlin for Android
 - Flutter for cross platform
 ### API
-Amazon
-
-Google Cloud
+- Amazon
+- Google Cloud
 ### Repository
-Github
+- Github
 ### Issue tracker
