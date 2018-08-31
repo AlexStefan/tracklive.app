@@ -11,7 +11,7 @@ The service consist of two types of users:
 # Domain
 https://tracklive.app
 
-API Design: https://github.com/sergheir/tracklive.app
+API Design: https://app.swaggerhub.com/apis/sergheir/tracklive.app/1.0.0#/
 
 # Architecture
 Diagram: https://bit.ly/2wwPWVF
