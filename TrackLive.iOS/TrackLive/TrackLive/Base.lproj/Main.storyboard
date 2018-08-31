@@ -41,11 +41,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="193" y="33"/>
         </scene>
-        <!--View Controller-->
+        <!--Broadcast View Controller-->
         <scene sceneID="27X-yo-gFF">
             <objects>
-                <viewController id="AMf-aq-ex0" sceneMemberID="viewController">
+                <viewController id="AMf-aq-ex0" customClass="BroadcastViewController" customModule="TrackLive" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WWj-IN-18O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,11 +57,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btTest" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcT-u0-hU0">
+                                <rect key="frame" x="172" y="362" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="btTest"/>
+                                <state key="normal" title="jkk"/>
+                                <connections>
+                                    <action selector="buttonTappedWithButton:" destination="AMf-aq-ex0" eventType="touchUpInside" id="cwh-hZ-ehk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="13f-Bd-dOj" firstAttribute="centerX" secondItem="l4x-yl-gre" secondAttribute="centerX" id="Cw2-yO-uzw"/>
                             <constraint firstItem="13f-Bd-dOj" firstAttribute="centerY" secondItem="l4x-yl-gre" secondAttribute="centerY" id="K7R-UF-Zjm"/>
+                            <constraint firstItem="UcT-u0-hU0" firstAttribute="centerX" secondItem="l4x-yl-gre" secondAttribute="centerX" id="YWl-Vf-QDh"/>
+                            <constraint firstItem="UcT-u0-hU0" firstAttribute="top" secondItem="13f-Bd-dOj" secondAttribute="bottom" constant="8" id="gIe-yS-QzE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="l4x-yl-gre"/>
                     </view>

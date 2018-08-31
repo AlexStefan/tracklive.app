@@ -1,4 +1,11 @@
 PODS:
+  - Ably (1.1.0):
+    - KSCrashAblyFork (= 1.15.8-ably-2)
+    - msgpack (= 0.1.8)
+    - SAMKeychain (= 1.5.3)
+    - SocketRocket (= 0.5.1)
+    - ULID (= 1.0.2)
+  - Alamofire (4.7.3)
   - GoogleMaps (2.7.0):
     - GoogleMaps/Maps (= 2.7.0)
   - GoogleMaps/Base (2.7.0)
@@ -6,20 +13,103 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (2.7.0):
     - GoogleMaps/Base (= 2.7.0)
+  - KSCrashAblyFork (1.15.8-ably-2):
+    - KSCrashAblyFork/Installations (= 1.15.8-ably-2)
+  - KSCrashAblyFork/Installations (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting
+  - KSCrashAblyFork/Recording (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording/Tools (= 1.15.8-ably-2)
+  - KSCrashAblyFork/Recording/Tools (1.15.8-ably-2)
+  - KSCrashAblyFork/Reporting (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters (= 1.15.8-ably-2)
+    - KSCrashAblyFork/Reporting/MessageUI (= 1.15.8-ably-2)
+    - KSCrashAblyFork/Reporting/Sinks (= 1.15.8-ably-2)
+    - KSCrashAblyFork/Reporting/Tools (= 1.15.8-ably-2)
+  - KSCrashAblyFork/Reporting/Filters (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Alert (= 1.15.8-ably-2)
+    - KSCrashAblyFork/Reporting/Filters/AppleFmt (= 1.15.8-ably-2)
+    - KSCrashAblyFork/Reporting/Filters/Base (= 1.15.8-ably-2)
+    - KSCrashAblyFork/Reporting/Filters/Basic (= 1.15.8-ably-2)
+    - KSCrashAblyFork/Reporting/Filters/GZip (= 1.15.8-ably-2)
+    - KSCrashAblyFork/Reporting/Filters/JSON (= 1.15.8-ably-2)
+    - KSCrashAblyFork/Reporting/Filters/Sets (= 1.15.8-ably-2)
+    - KSCrashAblyFork/Reporting/Filters/Stringify (= 1.15.8-ably-2)
+    - KSCrashAblyFork/Reporting/Filters/Tools (= 1.15.8-ably-2)
+  - KSCrashAblyFork/Reporting/Filters/Alert (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Base
+  - KSCrashAblyFork/Reporting/Filters/AppleFmt (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Base
+  - KSCrashAblyFork/Reporting/Filters/Base (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+  - KSCrashAblyFork/Reporting/Filters/Basic (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Base
+  - KSCrashAblyFork/Reporting/Filters/GZip (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Base
+  - KSCrashAblyFork/Reporting/Filters/JSON (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Base
+  - KSCrashAblyFork/Reporting/Filters/Sets (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/AppleFmt
+    - KSCrashAblyFork/Reporting/Filters/Base
+    - KSCrashAblyFork/Reporting/Filters/Basic
+    - KSCrashAblyFork/Reporting/Filters/GZip
+    - KSCrashAblyFork/Reporting/Filters/JSON
+    - KSCrashAblyFork/Reporting/Filters/Stringify
+  - KSCrashAblyFork/Reporting/Filters/Stringify (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Base
+  - KSCrashAblyFork/Reporting/Filters/Tools (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+  - KSCrashAblyFork/Reporting/MessageUI (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+  - KSCrashAblyFork/Reporting/Sinks (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters
+    - KSCrashAblyFork/Reporting/Tools
+  - KSCrashAblyFork/Reporting/Tools (1.15.8-ably-2):
+    - KSCrashAblyFork/Recording
+  - msgpack (0.1.8)
+  - SAMKeychain (1.5.3)
+  - SocketRocket (0.5.1)
+  - ULID (1.0.2)
 
 DEPENDENCIES:
+  - Ably
+  - Alamofire
   - GoogleMaps
   - GooglePlaces
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Ably
+    - Alamofire
     - GoogleMaps
     - GooglePlaces
+    - KSCrashAblyFork
+    - msgpack
+    - SAMKeychain
+    - SocketRocket
+    - ULID
 
 SPEC CHECKSUMS:
+  Ably: e3084affb67bb651b59c341efc5876d902a07f5b
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
+  KSCrashAblyFork: d356f10dcde9359db775334e38e93a48df6508f7
+  msgpack: 97491d2ea799408f4694f2c7d7fd79baf77853dd
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  ULID: fcabaa95746b670beb80c029beb3372da2f729bd
 
-PODFILE CHECKSUM: 3266bcdc2e5dbe3bc2bfa1ae481115980e96ddaa
+PODFILE CHECKSUM: e0191bcdd71119928f065062f4ae244ea6020637
 
 COCOAPODS: 1.5.3
