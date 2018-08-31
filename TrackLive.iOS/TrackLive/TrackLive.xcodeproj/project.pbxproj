@@ -14,6 +14,7 @@
 		E90CFC3A213924C3009304EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90CFC38213924C3009304EB /* LaunchScreen.storyboard */; };
 		E90CFC45213924C3009304EB /* TrackLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90CFC44213924C3009304EB /* TrackLiveTests.swift */; };
 		E90CFC50213924C3009304EB /* TrackLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90CFC4F213924C3009304EB /* TrackLiveUITests.swift */; };
+		E90CFC6021392891009304EB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E90CFC5F21392890009304EB /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26ADA49BBEC6BD0AB3EA10EE /* Pods-TrackLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrackLive/Pods-TrackLive.debug.xcconfig"; sourceTree = "<group>"; };
+		E1857736DAD0C57F462A24BD /* Pods-TrackLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackLive/Pods-TrackLive.release.xcconfig"; sourceTree = "<group>"; };
 		E90CFC2C213924C2009304EB /* TrackLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90CFC2F213924C2009304EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E90CFC31213924C2009304EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		E90CFC4B213924C3009304EB /* TrackLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90CFC4F213924C3009304EB /* TrackLiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackLiveUITests.swift; sourceTree = "<group>"; };
 		E90CFC51213924C3009304EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90CFC5F21392890009304EB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,13 +78,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38E6DD754C124B0528D0DC92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB935AE47F947F00381E2F94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26ADA49BBEC6BD0AB3EA10EE /* Pods-TrackLive.debug.xcconfig */,
+				E1857736DAD0C57F462A24BD /* Pods-TrackLive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E90CFC23213924C2009304EB = {
 			isa = PBXGroup;
 			children = (
+				E90CFC5F21392890009304EB /* Podfile */,
 				E90CFC2E213924C2009304EB /* TrackLive */,
 				E90CFC43213924C3009304EB /* TrackLiveTests */,
 				E90CFC4E213924C3009304EB /* TrackLiveUITests */,
 				E90CFC2D213924C2009304EB /* Products */,
+				CB935AE47F947F00381E2F94 /* Pods */,
+				38E6DD754C124B0528D0DC92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E90CFC54213924C3009304EB /* Build configuration list for PBXNativeTarget "TrackLive" */;
 			buildPhases = (
+				929A3F533C9DA8F2DA53A182 /* [CP] Check Pods Manifest.lock */,
 				E90CFC28213924C2009304EB /* Sources */,
 				E90CFC29213924C2009304EB /* Frameworks */,
 				E90CFC2A213924C2009304EB /* Resources */,
+				A85695E4A2600679422BF5B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +256,7 @@
 			files = (
 				E90CFC3A213924C3009304EB /* LaunchScreen.storyboard in Resources */,
 				E90CFC37213924C3009304EB /* Assets.xcassets in Resources */,
+				E90CFC6021392891009304EB /* Podfile in Resources */,
 				E90CFC35213924C2009304EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +276,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		929A3F533C9DA8F2DA53A182 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrackLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A85695E4A2600679422BF5B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TrackLive/Pods-TrackLive-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackLive/Pods-TrackLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E90CFC28213924C2009304EB /* Sources */ = {
@@ -428,6 +495,7 @@
 		};
 		E90CFC55213924C3009304EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26ADA49BBEC6BD0AB3EA10EE /* Pods-TrackLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +514,7 @@
 		};
 		E90CFC56213924C3009304EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1857736DAD0C57F462A24BD /* Pods-TrackLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
