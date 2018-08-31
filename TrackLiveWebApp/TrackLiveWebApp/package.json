@@ -1,12 +1,17 @@
 {
   "name": "track-live-web-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "TrackLiveWebApp",
   "main": "app.js",
-  "author": {
-    "name": "RaduM"
-  },
+  "author": "RaduM",
   "devDependencies": {
     "@types/node": "^6.0.87"
-  }
+  },
+  "scripts": {
+    "start": "node server.ts"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "license": "ISC"
 }
