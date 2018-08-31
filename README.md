@@ -16,11 +16,9 @@ Diagram: https://bit.ly/2wwPWVF
 
 # Tools
 ## Mobile
-Swift for iOS
-
-Kotlin for Android
-
-Flutter for cross platform
+- Swift for iOS
+- Kotlin for Android
+- Flutter for cross platform
 ## API
 Amazon
 
