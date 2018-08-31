@@ -14,6 +14,9 @@ https://tracklive.app
 # API Design
 https://app.swaggerhub.com/apis/sergheir/tracklive.app/1.0.0#/
 
+# Visual design
+- For Android: https://marvelapp.com/75hbdi1
+
 # Architecture
 Diagram: https://bit.ly/2wwPWVF
 
