@@ -9,8 +9,8 @@ The service consist of two types of users:
 	Trackers - the ones tracking others on map
 
 # Domain
-https://tracklive.app
-	
+[link](https://tracklive.app){:target="_blank"}
+
 # Architecture
 Diagram: https://bit.ly/2wwPWVF
 
