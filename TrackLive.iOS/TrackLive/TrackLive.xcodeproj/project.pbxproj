@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E90CFC30213924C2009304EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90CFC2F213924C2009304EB /* AppDelegate.swift */; };
-		E90CFC32213924C2009304EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90CFC31213924C2009304EB /* ViewController.swift */; };
+		E90CFC32213924C2009304EB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90CFC31213924C2009304EB /* MapViewController.swift */; };
 		E90CFC35213924C2009304EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90CFC33213924C2009304EB /* Main.storyboard */; };
 		E90CFC37213924C3009304EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90CFC36213924C3009304EB /* Assets.xcassets */; };
 		E90CFC3A213924C3009304EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90CFC38213924C3009304EB /* LaunchScreen.storyboard */; };
@@ -39,7 +39,7 @@
 		E1857736DAD0C57F462A24BD /* Pods-TrackLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackLive/Pods-TrackLive.release.xcconfig"; sourceTree = "<group>"; };
 		E90CFC2C213924C2009304EB /* TrackLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90CFC2F213924C2009304EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E90CFC31213924C2009304EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E90CFC31213924C2009304EB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E90CFC34213924C2009304EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E90CFC36213924C3009304EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E90CFC39213924C3009304EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				E90CFC2F213924C2009304EB /* AppDelegate.swift */,
-				E90CFC31213924C2009304EB /* ViewController.swift */,
+				E90CFC31213924C2009304EB /* MapViewController.swift */,
 				E90CFC33213924C2009304EB /* Main.storyboard */,
 				E90CFC36213924C3009304EB /* Assets.xcassets */,
 				E90CFC38213924C3009304EB /* LaunchScreen.storyboard */,
@@ -323,7 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E90CFC32213924C2009304EB /* ViewController.swift in Sources */,
+				E90CFC32213924C2009304EB /* MapViewController.swift in Sources */,
 				E90CFC30213924C2009304EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
