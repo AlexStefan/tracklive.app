@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -77,24 +78,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjZ-vT-oDO">
-                                <rect key="frame" x="154" y="333" width="66" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1j-qG-QZt" customClass="GMSMapView">
+                                <rect key="frame" x="13" y="96" width="349" height="520"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="mapView"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="o1j-qG-QZt" secondAttribute="height" multiplier="349:520" id="7uC-Az-PcD"/>
+                                    <constraint firstAttribute="height" constant="520" id="7wQ-eC-hbt"/>
+                                    <constraint firstAttribute="width" constant="349" id="ARF-sZ-4tW"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter tracking code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wNr-Wb-8vT">
+                                <rect key="frame" x="113" y="33" width="148" height="30"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pjZ-vT-oDO" firstAttribute="centerY" secondItem="vR6-lt-Auu" secondAttribute="centerY" id="rvj-3S-XSa"/>
-                            <constraint firstItem="pjZ-vT-oDO" firstAttribute="centerX" secondItem="vR6-lt-Auu" secondAttribute="centerX" id="yIJ-D6-gi1"/>
+                            <constraint firstItem="o1j-qG-QZt" firstAttribute="centerX" secondItem="wNr-Wb-8vT" secondAttribute="centerX" id="4ZL-Dt-HDG"/>
+                            <constraint firstItem="o1j-qG-QZt" firstAttribute="centerX" secondItem="vR6-lt-Auu" secondAttribute="centerX" id="Aew-u5-7T8"/>
+                            <constraint firstItem="o1j-qG-QZt" firstAttribute="top" secondItem="wNr-Wb-8vT" secondAttribute="bottom" constant="26" id="Iu9-qb-Vj5"/>
+                            <constraint firstItem="vR6-lt-Auu" firstAttribute="bottom" secondItem="o1j-qG-QZt" secondAttribute="bottom" constant="51" id="rEG-Je-maF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vR6-lt-Auu"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="o1j-qG-QZt" id="0ht-5h-PCS"/>
+                        <outlet property="trackingCodeTextField" destination="wNr-Wb-8vT" id="LCE-pc-fzM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssD-Fx-UBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="-233"/>
+            <point key="canvasLocation" x="1020" y="-233.43328335832086"/>
         </scene>
     </scenes>
 </document>
