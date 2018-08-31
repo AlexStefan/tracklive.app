@@ -25,6 +25,3 @@ Diagram: https://bit.ly/2wwPWVF
 - Kotlin for Android
 ### Web
 - React
-### Repository
-- Github
-### Issue tracker
