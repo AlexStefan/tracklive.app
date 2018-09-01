@@ -17,7 +17,7 @@ https://app.swaggerhub.com/apis/sergheir/tracklive.app/1.0.0#/
 # Visual design
 - For Android: https://marvelapp.com/75hbdi1
 - For icons: https://www.iconfinder.com
-- For color palettes: https://color.adobe.com/explore
+- For color palettes: https://color.adobe.com/explore, http://materialuicolors.co/
 
 # Architecture
 Diagram: https://bit.ly/2wwPWVF
