@@ -5,8 +5,8 @@ Let you share your location with others and track location of someone or somethi
 	
 # How it works?
 The service consist of two types of users:
-	Broadcasters - the ones that share their location
-	Trackers - the ones tracking someone or something on map
+- Broadcasters - the ones that share their location, and
+- Trackers - the ones tracking someone or something on map
 
 # Domain
 https://tracklive.app
