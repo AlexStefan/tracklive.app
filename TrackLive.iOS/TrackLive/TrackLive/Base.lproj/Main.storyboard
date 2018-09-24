@@ -52,8 +52,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13f-Bd-dOj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="lbMessageUpdate" text="Screen 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13f-Bd-dOj">
                                 <rect key="frame" x="153" y="333" width="68" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="lbMessageUpdate"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -76,6 +77,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="l4x-yl-gre"/>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="13f-Bd-dOj" id="q7t-I2-yhU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ah7-Yt-g8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
