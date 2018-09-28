@@ -16,6 +16,7 @@ https://app.swaggerhub.com/apis/sergheir/tracklive.app/1.0.0#/
 
 # Visual design
 - For Android: https://marvelapp.com/75hbdi1
+- User flows: https://userflows.marvelapp.com/75hbdi1?utm_campaign=prototype-player&utm_source=other&utm_medium=web-app&utm_term=player&utm_content=userflows
 - For icons: https://www.iconfinder.com
 - For color palettes: https://color.adobe.com/explore, http://materialuicolors.co/
 
