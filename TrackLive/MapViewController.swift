@@ -8,20 +8,23 @@
 
 import UIKit
 import GoogleMaps
+import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, CLLocationManagerDelegate {
+
+    var locationManager = CLLocationManager()
 
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var trackingCodeTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.mapView.camera = GMSCameraPosition.camera(withLatitude: 52.520736, longitude: 13.409423, zoom: 12)
-        let initialLocation = CLLocationCoordinate2DMake(52.520736, 13.409423)
-        let marker = GMSMarker(position: initialLocation)
-        marker.title = "Berlin"
-        marker.map = mapView
+        self.locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,5 +34,14 @@ class MapViewController: UIViewController {
 
     override func loadView() {
         super.loadView();
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        self.mapView.camera = GMSCameraPosition.camera(withLatitude: locValue.latitude, longitude: locValue.longitude, zoom: 50)
+        let currentLocation = CLLocationCoordinate2DMake(locValue.latitude, locValue.longitude)
+        let marker = GMSMarker(position: currentLocation)
+        marker.title = "Me"
+        marker.map = mapView
     }
 }
