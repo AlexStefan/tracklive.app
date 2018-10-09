@@ -32,3 +32,6 @@ Diagram: https://bit.ly/2wwPWVF
 - Kotlin for Android
 ### Web
 - React
+
+# Roadmap
+- Integrate what3words to establish meeting location
