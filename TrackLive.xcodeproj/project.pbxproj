@@ -18,6 +18,7 @@
 		E90CFC50213924C3009304EB /* TrackLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90CFC4F213924C3009304EB /* TrackLiveUITests.swift */; };
 		E90CFC6021392891009304EB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E90CFC5F21392890009304EB /* Podfile */; };
 		E9A85E61215E5881005696E9 /* TrackLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A85E60215E5881005696E9 /* TrackLive.swift */; };
+		E9A85E63215E6BB6005696E9 /* CommunicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A85E62215E6BB6005696E9 /* CommunicationService.swift */; };
 		E9B1BA6B213989B60057E920 /* BroadcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1BA6A213989B60057E920 /* BroadcastViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		E90CFC51213924C3009304EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90CFC5F21392890009304EB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E9A85E60215E5881005696E9 /* TrackLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackLive.swift; sourceTree = "<group>"; };
+		E9A85E62215E6BB6005696E9 /* CommunicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationService.swift; sourceTree = "<group>"; };
 		E9B1BA6A213989B60057E920 /* BroadcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +141,7 @@
 				331FAD062139622F009CED5F /* MapViewController.swift */,
 				E9B1BA6A213989B60057E920 /* BroadcastViewController.swift */,
 				E9A85E60215E5881005696E9 /* TrackLive.swift */,
+				E9A85E62215E6BB6005696E9 /* CommunicationService.swift */,
 			);
 			path = TrackLive;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 			files = (
 				E90CFC32213924C2009304EB /* LandingViewController.swift in Sources */,
 				331FAD072139622F009CED5F /* MapViewController.swift in Sources */,
+				E9A85E63215E6BB6005696E9 /* CommunicationService.swift in Sources */,
 				E9A85E61215E5881005696E9 /* TrackLive.swift in Sources */,
 				E9B1BA6B213989B60057E920 /* BroadcastViewController.swift in Sources */,
 				E90CFC30213924C2009304EB /* AppDelegate.swift in Sources */,

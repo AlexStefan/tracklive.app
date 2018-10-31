@@ -15,7 +15,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var locationManager = CLLocationManager()
 
     @IBOutlet weak var mapView: GMSMapView!
-    @IBOutlet weak var trackingCodeTextField: UITextField!
+    @IBOutlet weak var searchBox: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,11 +37,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-        self.mapView.camera = GMSCameraPosition.camera(withLatitude: locValue.latitude, longitude: locValue.longitude, zoom: 50)
-        let currentLocation = CLLocationCoordinate2DMake(locValue.latitude, locValue.longitude)
-        let marker = GMSMarker(position: currentLocation)
-        marker.title = "Me"
-        marker.map = mapView
+        if (manager.location != nil) {
+            let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+            
+            if (self.mapView != nil) {
+                self.mapView.camera = GMSCameraPosition.camera(withLatitude: locValue.latitude, longitude: locValue.longitude, zoom: 10)
+                let currentLocation = CLLocationCoordinate2DMake(locValue.latitude, locValue.longitude)
+                let marker = GMSMarker(position: currentLocation)
+                marker.title = "Me"
+                marker.map = mapView
+            }
+        }
     }
 }
