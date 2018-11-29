@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Search tracking code here" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="wNr-Wb-8vT">
-                                <rect key="frame" x="71" y="40" width="233.5" height="53"/>
+                                <rect key="frame" x="20" y="40" width="335" height="53"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="85q-vh-Czo"/>
@@ -33,7 +33,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R45-C4-Gsy">
-                                <rect key="frame" x="77.5" y="596" width="220" height="51"/>
+                                <rect key="frame" x="20" y="596" width="335" height="51"/>
                                 <color key="backgroundColor" red="0.28592839279611409" green="0.49369447969543145" blue="0.35406314207150896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="jxj-k2-L0b"/>
@@ -41,6 +41,9 @@
                                 <state key="normal" title="START SHARING MY LOCATION">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="StartSharingLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cj2-V0-j0n"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,9 +52,11 @@
                             <constraint firstItem="R45-C4-Gsy" firstAttribute="centerX" secondItem="fDb-df-Xkq" secondAttribute="centerX" id="BVX-1b-aSH"/>
                             <constraint firstItem="o1j-qG-QZt" firstAttribute="centerX" secondItem="fDb-df-Xkq" secondAttribute="centerX" id="VSY-M3-ezM"/>
                             <constraint firstItem="o1j-qG-QZt" firstAttribute="height" secondItem="EDt-Yx-yry" secondAttribute="height" id="WSO-uR-NTp"/>
+                            <constraint firstItem="R45-C4-Gsy" firstAttribute="width" secondItem="o1j-qG-QZt" secondAttribute="width" constant="-40" id="X7R-Gk-0B0"/>
                             <constraint firstItem="wNr-Wb-8vT" firstAttribute="top" secondItem="fDb-df-Xkq" secondAttribute="top" constant="20" id="Xq0-vs-ewh"/>
                             <constraint firstItem="o1j-qG-QZt" firstAttribute="width" secondItem="EDt-Yx-yry" secondAttribute="width" id="drQ-TQ-0Op"/>
                             <constraint firstItem="fDb-df-Xkq" firstAttribute="bottom" secondItem="R45-C4-Gsy" secondAttribute="bottom" constant="20" id="hxu-lY-Mhr"/>
+                            <constraint firstItem="wNr-Wb-8vT" firstAttribute="width" secondItem="o1j-qG-QZt" secondAttribute="width" constant="-40" id="lLi-Fx-3ye"/>
                             <constraint firstItem="o1j-qG-QZt" firstAttribute="centerY" secondItem="fDb-df-Xkq" secondAttribute="centerY" id="yUW-Su-3zr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fDb-df-Xkq"/>
@@ -63,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="193" y="33"/>
+            <point key="canvasLocation" x="192.80000000000001" y="32.833583208395808"/>
         </scene>
         <!--Broadcast View Controller-->
         <scene sceneID="27X-yo-gFF">
