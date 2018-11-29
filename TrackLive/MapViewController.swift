@@ -9,6 +9,7 @@
 import UIKit
 import GoogleMaps
 import MapKit
+import Ably
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -46,6 +47,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 let marker = GMSMarker(position: currentLocation)
                 marker.title = "Me"
                 marker.map = mapView
+            }
+            
+            let ably = ARTRealtime(key: TrackLive.art)
+            /// Publish a message to the test channel
+            let channel = ably.channels.get("test")
+//            channel.publish("location", data: JSONSerialization.jsonObject(with: currentLocation, options: JSONSerialization.ReadingOptions)
+                //.data(withJSONObject: currentLocation, options: //)//.jsonObject(with: locValue, options: <#T##JSONSerialization.ReadingOptions#>)
+               // """ { latitude: "\(locValue.latitude)\", longitude:\" \(locValue.longitude)\ \" """)
+
+            channel.subscribe { message in
+                 let text = "\(message.timestamp) \(message.data ?? "")"
             }
         }
     }

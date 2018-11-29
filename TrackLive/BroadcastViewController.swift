@@ -20,14 +20,20 @@ class BroadcastViewController: UIViewController {
         self.messageLabel.text = ""
         
         channel.subscribe { message in
-            self.messageLabel.text = "\(message.timestamp) \(message.data)"
+            self.messageLabel.text = "\(message.timestamp) \(message.data ?? "")"
         }
     }
     
     @IBAction func buttonTapped(button: UIButton){
-        let ably = ARTRealtime(key: TrackLive.art)
-        /// Publish a message to the test channel
-        let channel = ably.channels.get("test")
-        channel.publish("greeting", data: "hello")
+        let com = CommunicationService.init()
+        com.GetTrackingCodeLocation(code: "5629499534213120") { result in
+            DispatchQueue.main.async {
+                self.messageLabel.text = result
+            }
+        }
+//        let ably = ARTRealtime(key: TrackLive.art)
+//        /// Publish a message to the test channel
+//        let channel = ably.channels.get("test")
+//        channel.publish("greeting", data: "hello")
     }
 }
