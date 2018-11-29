@@ -1,7 +1,8 @@
 # tracklive.app
   
 # What it does?
-Let you share your location with others and track location of someone or something using tracking code
+- Let you share your location with other users
+- Let you track location of other users using a tracking code
 	
 # How it works?
 The service consist of two types of users:
