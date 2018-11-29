@@ -13,12 +13,29 @@ import Ably
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
 
-    var locationManager = CLLocationManager()
-
+    @IBOutlet weak var shareLocationButton: UIButton!
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var searchBox: UITextField!
     
+    var locationManager = CLLocationManager()
+    var notSharingLocationBackgroundColor : UIColor?
+    var sharingLocationBackgroundColor = UIColor(red: 230/255, green: 20/255, blue: 125/255, alpha: 1)
+    var startSharingLocationText = "START SHARING MY LOCATION"
+    var stopSharingLocationText = "STOP SHARING MY LOCATION"
+    var isSharingMyLocation = false
+    
     @IBAction func StartSharingLocation(_ sender: UIButton) {
+        isSharingMyLocation = !isSharingMyLocation
+        if isSharingMyLocation
+        {
+            shareLocationButton.setTitle(stopSharingLocationText, for: .normal)
+            shareLocationButton.backgroundColor = sharingLocationBackgroundColor
+        }
+        else
+        {
+            shareLocationButton.setTitle(startSharingLocationText, for: .normal)
+            shareLocationButton.backgroundColor = notSharingLocationBackgroundColor
+        }
         //displayDialog(trackingCode: "KNUD")
     }
     
@@ -30,6 +47,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
+        notSharingLocationBackgroundColor = shareLocationButton.backgroundColor
     }
 
     override func didReceiveMemoryWarning() {
