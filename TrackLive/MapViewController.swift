@@ -16,6 +16,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var shareLocationButton: UIButton!
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var searchBox: UITextField!
+    @IBOutlet weak var ShareLocationPositionConstraint: NSLayoutConstraint!
     
     var locationManager = CLLocationManager()
     var notSharingLocationBackgroundColor : UIColor?
@@ -30,13 +31,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         {
             shareLocationButton.setTitle(stopSharingLocationText, for: .normal)
             shareLocationButton.backgroundColor = sharingLocationBackgroundColor
+            displayBottomDialog(trackingCode: "KNUD")
+            ShareLocationPositionConstraint.constant += 70
         }
         else
         {
             shareLocationButton.setTitle(startSharingLocationText, for: .normal)
             shareLocationButton.backgroundColor = notSharingLocationBackgroundColor
+            ShareLocationPositionConstraint.constant -= 70
         }
-        //displayDialog(trackingCode: "KNUD")
     }
     
     override func viewDidLoad() {
@@ -59,7 +62,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         super.loadView();
     }
     
-    func displayDialog(trackingCode: String) {
+    func displayBottomDialog(trackingCode: String) {
+        let alert = UIAlertController(title: "Your tracking code :   " + trackingCode, message: "3 users track you", preferredStyle: .actionSheet)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func displayWhatDoYouWantDialog(trackingCode: String) {
         let alert = UIAlertController(title: "What do you want to do?", message: "Select what to do with tracking number " + trackingCode, preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Track", style: .default, handler: { (_) in
